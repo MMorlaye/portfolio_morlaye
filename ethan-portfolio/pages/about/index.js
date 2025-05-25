@@ -15,23 +15,28 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiMongodb,
+  SiExpress,
+  SiTailwindcss
 } from 'react-icons/si';
 
 //  about data
 export const aboutData = [
   {
-    title: 'skills',
+    title: 'compétences',
     info: [
       {
-        title: 'Web Development',
+        title: 'Développement Web',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
+          <SiTailwindcss />,
           <FaWordpress />,
+          <SiMongodb />,
+          <SiExpress />,
         ],
       },
       {
@@ -41,50 +46,74 @@ export const aboutData = [
     ],
   },
   {
-    title: 'awards',
+    title: 'Formations',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'CS SNO - Saint Charles Sainte Croix',
+        stage: '2024 - 2025',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: "Parcours-Développeur web - Openclassrooms",
+        stage: '2023 - 2024',
+      },
+      {
+        title: "Licence 1 Géographie - Université d'Angers",
+        stage: '2022 - 2023',
+      },
+      {
+        title: "Baccalauréat Unique - CS Ahmadou Dieng ",
+        stage: '2019 - 2020',
       },
     ],
   },
   {
-    title: 'experience',
+    title: 'expériences',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Stage - Saint Charles Sainte Croix',
+        stage: '2024 - 2025',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Développement Fullstack - ONG/Bénévolat',
+        stage: '2023 - 2024',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'SEO - Openclassrooms',
+        stage: '2023 - 2024',
       },
+      {
+        title: 'Gestion de projet - Openclassrooms',
+        stage: '2023 - 2024',
+      },
+      {
+        title: 'Sécrétaire Exécutif - AEGA',
+        stage: '2023 - 2024',
+      },
+      {
+        title: 'Président d’Association - Toastmasters',
+        stage: '2020 - 2022',
+      },
+      
     ],
   },
   {
-    title: 'credentials',
+    title: 'soft skills',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Travail en équipe',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Capacité d’adaptation',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Curiosité technique',
       },
+      {
+        title: 'Autonomie dans l’apprentissage',
+      },
+      {
+        title: 'Gestion du temps et des priorités',
+      }
     ],
   },
 ];
@@ -126,8 +155,8 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Captivating <span className='text-accent'>stories</span> birth
-            magnificent designs.
+            Du code, <span className='text-accent'>des idées</span> et
+            des projets.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -136,9 +165,10 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
-            done remote work for agencies, counsulted for startups, and
-            collaborated on digital products for business and consumer use.
+            Je suis un développeur web débutant passionné, avec une année d'expérience 
+            dans la création d'applications web. J'ai acquis des compétences en front-end 
+            avec React, HTML, CSS, Tailwind, ainsi qu'en back-end avec Node.js, Express, 
+            et MongoDB.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -152,39 +182,39 @@ const About = () => {
               {/* experience */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={2} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Years of experience
+                  Années d'expérience
                 </div>
               </div>
               {/* clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Satisfied clients
+                  Clients Satisfait
                 </div>
               </div>
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Finished projects
+                  Projets Terminés
                 </div>
               </div>
               {/* awards */}
-              <div className='relative flex-1'>
+              {/* <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={8} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Winning awards
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>
@@ -221,7 +251,7 @@ const About = () => {
                 >
                   {/* title */}
                   <div className='font-light mb-2 md:mb-0'>{item.title}</div>
-                  <div className='hidden md:flex'>-</div>
+                  <div className='hidden md:flex'></div>
                   <div>{item.stage}</div>
                   <div className='flex gap-x-4'>
                     {/* icons */}

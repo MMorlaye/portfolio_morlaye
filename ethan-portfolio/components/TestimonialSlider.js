@@ -1,25 +1,25 @@
 // testimonial slider data
 export const testimonialSlider = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
-    position: 'Customer',
+    image: '/t-avt-0.png',
+    name: 'Gabriel Gelin',
+    position: 'Enseignant',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      "Malgré une arrivée tardive, Morlaye a su faire preuve d'un grand sérieux et d'une très belle implication lors de son stage.",
   },
   {
-    image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    image: '/t-avt-0.png',
+    name: 'Nicolas Legrelle',
+    position: 'Enseignant',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Arrivé peu de temps avant la première PFMP, Morlaye est un élève prometteur et sérieux qui montre une grande motivation.',
   },
   {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
+    image: '/t-avt-0.png',
+    name: 'Denis Belier',
+    position: 'Enseignant',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Très bon travail, très bon ensemble.',
   },
 ];
 
