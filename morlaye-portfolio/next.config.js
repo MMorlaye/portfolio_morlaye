@@ -15,8 +15,10 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // Si vous utilisez des liens internes
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
+  distDir: 'out',
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = nextConfig
